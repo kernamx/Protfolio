@@ -2,3 +2,45 @@
 body {
   font-family: helvetica;
 }
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.clearfix {
+  clear: both;
+}
+
+header {
+  height: 100px;
+  background: #444;
+}
+
+header div {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header div img {
+  float: left;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 70px;
+  margin-top: 10px;
+}
+
+main {
+  width: 960px;
+  margin: 30px auto;
+}
+
+footer {
+  margin-top:30px;
+  height: 100px;
+  background: #222;
+}
