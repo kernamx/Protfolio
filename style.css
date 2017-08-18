@@ -49,6 +49,25 @@ main {
   margin: 30px auto;
 }
 
+<style type="text/css">
+  .active{
+    z-index:99;
+  }
+</style>
+
+<script>
+  function slideSwitch() {
+    var $active = $('div#slideshow IMg.active');
+    var $next = $active.next();
+
+    $next.addClass('active');
+    $active.removeClass('active');
+  }
+  $(function() {
+    setInterval("slideSwitch()", 5000);
+  });
+  </script>
+
 footer {
   margin-top:30px;
   height: 100px;
