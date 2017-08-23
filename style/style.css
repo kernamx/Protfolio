@@ -1,0 +1,9 @@
+body {
+  width: 90%;
+  font-family: cursive;
+}
+
+aside {
+  max-width: 90%;
+  margin: auto;
+}
