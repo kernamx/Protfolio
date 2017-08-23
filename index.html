@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
+    <title>Powen Chang Portfolio</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/layout.css" />
+    <link rel="stylesheet" href="style/modules.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>Powen Chang</title>
+
+    <script id="article-template" type="text/x-handlebars-template">
+      <article data-tab="{{tab}}">
+        <h1>{{title}}</h1>
+        <section class="tab-body">{{{body}}}</section>
+      </article>
+    </script>
   </head>
+
   <body>
     <header>
-      <h1>Powen Chang</h1>
-      <div>
-        <nav class="main-nav">
+      <nav>
+        <h1>Powen Chang</h1>
+
+        <div class="guild"></div>
+        <div class="navLinks" id="navLinks">
           <ul>
-            <li class="home"><a href="#">Home</a></li>
-            <li class="google"><a href="#">Google</a></li>
-            <li class="todo"><a href="#">Todo</a></li>
-            <li class="donation"><a href="#">Donations</a></li>
+            <li><a href="" id="skills">Skills</a></li>
+            <li><a href="" id="projects">Projects</a></li>
+            <li><a href="" id="about">About</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
-    <main>
-      <div id="slideshow">
-        <img src="assets/imgc1.jpg" style="position:absolute;" class="active" />
-        <img src="assets/imgc2.jpg" style="position:absolute;" />
-        <img src="assets/imgc3.jpg" style="position:absolute;" />
-      </div>
-      <h2>Projects</h2>
-      <ul class="sub-banners">
-        <li><img src="http://placehold.it/300x300"></li>
-        <li><img src="http://placehold.it/300x300"></li>
-        <li><img src="http://placehold.it/300x300"></li>
-      </ul>
+    <aside id="carousel">
+      <img class="slide" id="1" src="assets/imgc1.jpg"  />
+      <img class="slide" id="2" src="assets/imgc2.jpg"  />
+      <img class="slide" id="3" src="assets/imgc3.jpg" />
+      <img class="slide" id="4" src="assets/imgc4.jpg" />
+      <button class="button-left">&#12296;</button>
+      <button class="button-right">&#12297;</button>
+    </aside>
 
-      <h2>About</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+    <main class="content">
+      <section id="articles">
+      </section>
     </main>
 
-    <footer></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="carousel.js"></script>
-    <script src="app.js"></script>
+    <footer>
+    </footer>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js">
+      </script>
+    <script src="data/tab-data.json"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/view.js"></script>
   </body>
 </html>
