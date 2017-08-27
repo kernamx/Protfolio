@@ -2,31 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
     <title>Powen Chang</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/layout.css" />
+    <link rel="stylesheet" href="style/modules.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
       <h1>Powen Chang</h1>
-      <div>
+      <div class="fa fa-bars"></div>
         <nav class="main-nav">
           <ul>
-            <li class="home"><a href="#">Home</a></li>
-            <li class="google"><a href="#">Google</a></li>
-            <li class="todo"><a href="#">Todo</a></li>
-            <li class="donation"><a href="#">Donations</a></li>
+            <li class="skills"><a href="#">Skills</a></li>
+            <li class="projects"><a href="#">Projects</a></li>
+            <li class="about"><a href="#">About</a></li>
           </ul>
         </nav>
-      </div>
     </header>
 
-    <main>
-      <div id="slideshow">
-        <img src="assets/imgc1.jpg" style="position:absolute;" class="active" />
-        <img src="assets/imgc2.jpg" style="position:absolute;" />
-        <img src="assets/imgc3.jpg" style="position:absolute;" />
-      </div>
+    <aside id="carousel">
+      <img class="slide" id="1" src="assets/imgc1.jpg" />
+      <img class="slide" id="2" src="assets/imgc2.jpg" />
+      <img class="slide" id="3" src="assets/imgc3.jpg" />
+      <img class="slide" id="4" src="assets/imgc4.jpg" />
+      <button class="left-button">&larr;</button>
+      <button class="right-button">&rarr;</button>
+    </aside>
+
+    <main class="content">
+      <h2>Skills</h2>
+        <ul>
+          <li>"#"</li>
+          <li>"#"</li>
+          <li>"#"</li>
+          <li>"#"</li>
+        </ul>
       <h2>Projects</h2>
       <ul class="sub-banners">
         <li><img src="http://placehold.it/300x300"></li>
@@ -45,8 +58,10 @@
     </main>
 
     <footer></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="carousel.js"></script>
-    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
