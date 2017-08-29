@@ -80,3 +80,5 @@ $(document).ready(function() {
   websiteView.dropdownMenu();
   websiteView.carousel();
 });
+
+// need more time to work on the sticky Navigation.
