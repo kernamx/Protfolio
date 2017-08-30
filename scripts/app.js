@@ -81,4 +81,4 @@ $(document).ready(function() {
   websiteView.carousel();
 });
 
-// need more time to work on the sticky Navigation.
+// need more time to work on the sticky Navigation.1
