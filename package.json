@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "Powen-Chang-Portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Code301",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/kernamx/Protfolio.git"
   },
-  "author": "",
+  "author": "Powen Chang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kernamx/Protfolio/issues"
   },
   "homepage": "https://github.com/kernamx/Protfolio#readme",
   "dependencies": {
+    "express-proxy": "0.0.2",
     "server-js": "^0.1.4"
   }
 }
